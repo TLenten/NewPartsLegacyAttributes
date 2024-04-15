@@ -2,15 +2,7 @@ This procedure intends to create new part numbers using as many part attributes 
 I used SSMS to extract the data and DMT to load it back into Epicor.
 
 
-Main tables to extract, you might have other tables such as 
-	CustXpart, 
-	PartXRefVend,
-	VendPBrk,
-	PriceLstParts,
-	PartSubs,
-	UD Tables
-
-This is also the load order:
+DMT Load order:
 
 PART
 PART PLANT
@@ -23,3 +15,12 @@ PARTMTL - Two Passes
 	PARTMTL - PARENTS (PartNum)
 PARTBIN QTY IN
 PARTBIN QTY OUT
+
+
+You might have other tables to consider, such as 
+	CustXpart, 
+	PartXRefVend,
+	VendPBrk,
+	PriceLstParts,
+	PartSubs,
+	UD Tables
