@@ -1,4 +1,4 @@
-This procedure intends to create new part numbers using as many part attributes from existing parts as possible as changing part number is not practical or supported and most likely to result in a non functional system.
+This procedure intends to create new part numbers using as many part attributes from existing parts as possible. Changing part number is not practical or supported and most likely to result in a non functional system.
 I used SSMS to extract the data and DMT to load it back into Epicor.
 
 
