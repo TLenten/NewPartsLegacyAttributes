@@ -9,18 +9,25 @@ PART PLANT
 PART WAREHOUSE
 PART REVISION
 PART COST
-PART OPERATION
-PARTMTL - Two Passes
+BILL OF OPERATIONS
+BILL OF MATERIALS - Two Passes
 	PARTMTL - CHILDREN (MtlPartNum)
 	PARTMTL - PARENTS (PartNum)
-PARTBIN QTY IN
-PARTBIN QTY OUT
+QUANTITY ADJUSTMENT
+	PARTBIN QTY IN
+	PARTBIN QTY OUT
 
 
 You might have other tables to consider, such as 
-	CustXpart, 
-	PartXRefVend,
-	VendPBrk,
-	PriceLstParts,
+	CustXpart 
+		DMT - Cust Part X Ref 
+	PartXRefVend
+		DMT - Supplier Part
+	VendPBrk
+		DMT -Supplier Price List
+	PriceLstParts
+		DMT -Price List Part
 	PartSubs,
+		DMT - Alternate Part
 	UD Tables
+		DMT - UD**
