@@ -6,18 +6,25 @@ I used SSMS to extract the data and DMT to load it back into Epicor.
 DMT Load order:
 
 PART
+	DMT - Part
 PART PLANT
+	DMT - Part Plant
 PART WAREHOUSE
+	DMT - Part Warehouse
 PART REVISION
+	DMT - Part Revision
 PART COST
-BILL OF OPERATIONS
-BILL OF MATERIALS - Two Passes
+	DMT - Cost Adjustment
+PART OPERATIONS
+	DMT - Bill of Operations
+PARTMTL - Two Passes
 	PARTMTL - CHILDREN (MtlPartNum)
 	PARTMTL - PARENTS (PartNum)
+		DMT - Bill Of Materials
 QUANTITY ADJUSTMENT
-	PARTBIN QTY IN
-	PARTBIN QTY OUT
-
+	Adjust QTY IN
+	Adjust Legacy QTY OUT
+		DMT - Quantity Adjustment
 
 You might have other tables to consider, such as 
 	CustXpart 
