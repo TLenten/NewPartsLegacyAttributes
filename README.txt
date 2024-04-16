@@ -25,9 +25,9 @@ You might have other tables to consider, such as
 	PartXRefVend
 		DMT - Supplier Part
 	VendPBrk
-		DMT -Supplier Price List
+		DMT - Supplier Price List
 	PriceLstParts
-		DMT -Price List Part
+		DMT - Price List Part
 	PartSubs,
 		DMT - Alternate Part
 	UD Tables
